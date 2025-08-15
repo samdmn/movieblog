@@ -391,3 +391,30 @@ h1 {
     border-radius: 15px;
     margin: 20px 0;
 }
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin: 30px 0;
+}
+
+.page-link {
+    padding: 8px 14px;
+    border: none;
+    border-radius: 6px;
+    background: rgba(255,255,255,0.1);
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.page-link:hover {
+    background: linear-gradient(45deg, #ff6b6b, #feca57);
+}
+
+.page-link.active {
+    background: linear-gradient(45deg, #ff6b6b, #feca57);
+    font-weight: bold;
+}
+

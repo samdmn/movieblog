@@ -48,6 +48,9 @@
         <div id="moviesContainer">
             <div class="loading">Chargement de la collection...</div>
         </div>
+
+        <!-- Pagination -->
+        <div class="pagination" id="pagination"></div>
         
         <footer class="footer">
             <p>🎭 Cette collection est mise à jour régulièrement avec de nouveaux films et critiques</p>
@@ -356,6 +359,8 @@
     let filteredMovies = [...movies];
     let currentGenreFilter = 'all';
     let currentSearchTerm = '';
+    let currentPage = 1;
+    let moviesPerPage = 7;
 
     document.addEventListener('DOMContentLoaded', function() {
         setTimeout(() => {
@@ -369,6 +374,7 @@
     function setupEventListeners() {
         document.getElementById('searchInput').addEventListener('input', function(e) {
             currentSearchTerm = e.target.value.toLowerCase();
+            currentPage = 1;
             filterMovies();
         });
         
@@ -377,7 +383,12 @@
                 document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
                 e.target.classList.add('active');
                 currentGenreFilter = e.target.dataset.genre;
+                currentPage = 1;
                 filterMovies();
+            }
+            if (e.target.classList.contains('page-link')) {
+                currentPage = parseInt(e.target.dataset.page);
+                renderMovies();
             }
         });
     }
@@ -462,29 +473,26 @@
     function renderMovies() {
         const container = document.getElementById('moviesContainer');
         filteredMovies.sort((a, b) => b.id - a.id);
+
+        const totalPages = Math.ceil(filteredMovies.length / moviesPerPage);
+        const startIndex = (currentPage - 1) * moviesPerPage;
+        const endIndex = startIndex + moviesPerPage;
+        const moviesToDisplay = filteredMovies.slice(startIndex, endIndex);
         
-        if (filteredMovies.length === 0) {
-            if (currentSearchTerm || currentGenreFilter !== 'all') {
-                container.innerHTML = `
-                    <div class="no-results">
-                        <h3>Aucun résultat trouvé</h3>
-                        <p>Essayez de modifier vos critères de recherche ou de filtrage.</p>
-                    </div>
-                `;
-            } else {
-                container.innerHTML = `
-                    <div class="empty-state">
-                        <h3>Collection en cours de construction</h3>
-                        <p>De nouveaux films seront bientôt ajoutés à cette collection.</p>
-                    </div>
-                `;
-            }
+        if (moviesToDisplay.length === 0) {
+            container.innerHTML = `
+                <div class="no-results">
+                    <h3>Aucun résultat trouvé</h3>
+                    <p>Essayez de modifier vos critères de recherche ou de filtrage.</p>
+                </div>
+            `;
+            document.getElementById('pagination').innerHTML = '';
             return;
         }
         
         container.innerHTML = `
             <div class="movies-grid">
-                ${filteredMovies.map(movie => `
+                ${moviesToDisplay.map(movie => `
                     <div class="movie-card">
                         <div class="movie-poster">
                             ${movie.poster ? 
@@ -541,6 +549,20 @@
             </div>
         `;
         addLightboxEvents();
+        renderPagination(totalPages);
+    }
+
+    function renderPagination(totalPages) {
+        const pagination = document.getElementById('pagination');
+        if (totalPages <= 1) {
+            pagination.innerHTML = '';
+            return;
+        }
+        let buttons = '';
+        for (let i = 1; i <= totalPages; i++) {
+            buttons += `<button class="page-link ${i === currentPage ? 'active' : ''}" data-page="${i}">${i}</button>`;
+        }
+        pagination.innerHTML = buttons;
     }
 
     function toggleReview(id) {
