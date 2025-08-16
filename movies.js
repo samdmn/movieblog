@@ -2,6 +2,21 @@
 
 const movies = [
     {
+        id: 29,
+        title: "L'Arrivée d'un train en gare de La Ciotat",
+        year: "1896",
+        genre: ["Documentaire"],
+        rating: "",
+        review: "J'ai demandé à ChatGPT \"donne moi une liste de films à regarder pour aborder chaque époque du cinéma\" et c'est le premier film qu'il m'a proposé.",
+        poster: "https://image.tmdb.org/t/p/original/y3A15HpugKsPjVyxKa9POLTEX6B.jpg",
+        images: [
+                "https://image.tmdb.org/t/p/original/kLDi7ST92diaAzISLgd94BYO6Zw.jpg",
+                "https://image.tmdb.org/t/p/original/aLTxu9EiQ1EQ69qDUVE4Q5dtNfG.jpg",
+                "https://image.tmdb.org/t/p/original/uusNog5m2aCuL53rrKw8RaBnprb.jpg"
+        ],
+        dateAdded: "16/08/2025"
+    },
+    {
         id: 28,
         title: "Companion",
         year: "2025",
