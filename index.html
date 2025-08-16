@@ -39,9 +39,21 @@
             </div>
         </div>
         
-        <!-- Filtres par genre -->
-        <div class="filters" id="genreFilters">
-            <button class="filter-btn active" data-genre="all">Tous les genres</button>
+        <!-- Filtres par genre et année -->
+        <div class="filters-container">
+            <div class="filter-group">
+                <label for="genreSelect" class="filter-label">Genre :</label>
+                <select id="genreSelect" class="filter-select">
+                    <option value="all">Tous les genres</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label for="yearSelect" class="filter-label">Année :</label>
+                <select id="yearSelect" class="filter-select">
+                    <option value="all">Toutes les années</option>
+                </select>
+            </div>
+            <button id="clearFilters" class="clear-filters-btn">Réinitialiser</button>
         </div>
         
         <!-- Collection de films -->
@@ -373,6 +385,7 @@
 
     let filteredMovies = [...movies];
     let currentGenreFilter = 'all';
+    let currentYearFilter = 'all';
     let currentSearchTerm = '';
     let currentPage = 1;
     let moviesPerPage = 7;
@@ -381,7 +394,7 @@
         setTimeout(() => {
             renderMovies();
             updateStats();
-            generateGenreFilters();
+            generateFilters();
             setupEventListeners();
         }, 500);
     });
@@ -392,15 +405,31 @@
             currentPage = 1;
             filterMovies();
         });
+
+        document.getElementById('genreSelect').addEventListener('change', function(e) {
+            currentGenreFilter = e.target.value;
+            currentPage = 1;
+            filterMovies();
+        });
+
+        document.getElementById('yearSelect').addEventListener('change', function(e) {
+            currentYearFilter = e.target.value;
+            currentPage = 1;
+            filterMovies();
+        });
+
+        document.getElementById('clearFilters').addEventListener('click', function() {
+            document.getElementById('genreSelect').value = 'all';
+            document.getElementById('yearSelect').value = 'all';
+            document.getElementById('searchInput').value = '';
+            currentGenreFilter = 'all';
+            currentYearFilter = 'all';
+            currentSearchTerm = '';
+            currentPage = 1;
+            filterMovies();
+        });
         
         document.addEventListener('click', function(e) {
-            if (e.target.classList.contains('filter-btn')) {
-                document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
-                e.target.classList.add('active');
-                currentGenreFilter = e.target.dataset.genre;
-                currentPage = 1;
-                filterMovies();
-            }
             if (e.target.classList.contains('page-link')) {
                 currentPage = parseInt(e.target.dataset.page);
                 renderMovies();
@@ -408,14 +437,28 @@
         });
     }
 
-    function generateGenreFilters() {
+    function generateFilters() {
+        // Générer les options de genre
         const genres = [...new Set(movies.flatMap(movie => movie.genre || []))];
-        const filtersContainer = document.getElementById('genreFilters');
+        const genreSelect = document.getElementById('genreSelect');
         
-        filtersContainer.innerHTML = `
-            <button class="filter-btn active" data-genre="all">Tous les genres</button>
-            ${genres.map(genre => `<button class="filter-btn" data-genre="${genre}">${genre}</button>`).join('')}
-        `;
+        genres.sort().forEach(genre => {
+            const option = document.createElement('option');
+            option.value = genre;
+            option.textContent = genre;
+            genreSelect.appendChild(option);
+        });
+
+        // Générer les options d'année
+        const years = [...new Set(movies.map(movie => movie.year).filter(year => year))];
+        const yearSelect = document.getElementById('yearSelect');
+        
+        years.sort((a, b) => b - a).forEach(year => {
+            const option = document.createElement('option');
+            option.value = year;
+            option.textContent = year;
+            yearSelect.appendChild(option);
+        });
     }
 
     function filterMovies() {
@@ -423,7 +466,8 @@
             const matchesSearch = movie.title.toLowerCase().includes(currentSearchTerm) ||
                                 movie.review.toLowerCase().includes(currentSearchTerm);
             const matchesGenre = currentGenreFilter === 'all' || (movie.genre && movie.genre.includes(currentGenreFilter));
-            return matchesSearch && matchesGenre;
+            const matchesYear = currentYearFilter === 'all' || movie.year === currentYearFilter;
+            return matchesSearch && matchesGenre && matchesYear;
         });
         renderMovies();
     }
