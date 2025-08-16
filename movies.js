@@ -2,6 +2,21 @@
 
 const movies = [
     {
+        id: 28,
+        title: "Companion",
+        year: "2025",
+        genre: ["Thriller", "Science-fiction", "Horreur"],
+        rating: "",
+        review: "",
+        poster: "https://image.tmdb.org/t/p/original/oCoTgC3UyWGfyQ9thE10ulWR7bn.jpg",
+        images: [
+                "https://image.tmdb.org/t/p/original/9p2tVEEWw1M92Pt63Vbq7EjBpvk.jpg",
+                "https://image.tmdb.org/t/p/original/hG7IQooYB6uZAqUD1fbZ5pjS1It.jpg",
+                "https://image.tmdb.org/t/p/original/xtzDFcniq3RpmptnClDdi5NhcBD.jpg"
+        ],
+        dateAdded: "16/08/2025"
+    },
+    {
         id: 27,
         title: "The Shawshank Redemption",
         year: "1994",
