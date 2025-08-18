@@ -2,6 +2,36 @@
 
 const movies = [
     {
+        id: 31,
+        title: "The Birth of a Nation",
+        year: "1915",
+        genre: ["Drame", "Histoire", "Guerre"],
+        rating: "1",
+        review: "J'ai demandé à ChatGPT \"donne moi une liste de films à regarder pour aborder chaque époque du cinéma\" et c'est le deuxième film qu'il m'a proposé. C'est moche, long et raciste, mais c'est le premier blockbuster de l'histoire du cinéma.",
+        poster: "https://image.tmdb.org/t/p/original/f9MkgI1ObRVvJwWgJyWtRbgyWng.jpg",
+        images: [
+                "https://image.tmdb.org/t/p/original/4H4RAeeykpi0ijvu3wYgV346y06.jpg",
+                "https://image.tmdb.org/t/p/original/qha83S6AjcUIj4F86cM8UqJVcSl.jpg",
+                "https://image.tmdb.org/t/p/original/zuAZhhkNxMl7pgnWYgwbTbUTfIN.jpg"
+        ],
+        dateAdded: "17/08/2025"
+    },
+    {
+        id: 30,
+        title: "Still Alice",
+        year: "2014",
+        genre: ["Drame"],
+        rating: "3.5",
+        review: "Un très beau film qui aborde la maladie d'Alzheimer avec justesse. C'est honnêtement difficile à regarder. Les films sur les maladies c'est vraiment mon point faible dans le sens où j'y suis très sensible. J'ai beaucoup aimé la performance de Julianne Moore, les prix qui lui ont été decernés sont mérités. Par contre, j'ai un problème avec la photo de ce film : les couleurs sont tres réelles comme si rien avait été retouché, un peu téléfilmique. C'est sûrement voulu par avoir un côté réaliste, et montrer qu'Alzheimer est une maladie qui touche tout le monde.",
+        poster: "https://image.tmdb.org/t/p/original/MeJJCT1o87j7D0mR3yQs4s4PIA.jpg",
+        images: [
+                "https://image.tmdb.org/t/p/original/cWMeHXEGeZ8cjEOmznjVGr04Ofu.jpg",
+                "https://image.tmdb.org/t/p/original/tw1IZuR6GVlSL4aqfsmLFfUJAN9.jpg",
+                "https://image.tmdb.org/t/p/original/k4Uki0zmlCt52EcKslb20D6DLYs.jpg"
+        ],
+        dateAdded: "17/08/2025"
+    },
+    {
         id: 29,
         title: "L'Arrivée d'un train en gare de La Ciotat",
         year: "1896",
@@ -21,8 +51,8 @@ const movies = [
         title: "Companion",
         year: "2025",
         genre: ["Thriller", "Science-fiction", "Horreur"],
-        rating: "",
-        review: "",
+        rating: "2.5",
+        review: "Je commence à en avoir marre des films que ne se prennent pas au sérieux avec des personnages clichés qui font des vannes de merde. Les trois quarts du scénario sont franchement prévisibles. On dirait un épisode de Black Mirror un peu long et chiant. C'est pas mauvais, mais c'est pas bon non plus.",
         poster: "https://image.tmdb.org/t/p/original/oCoTgC3UyWGfyQ9thE10ulWR7bn.jpg",
         images: [
                 "https://image.tmdb.org/t/p/original/9p2tVEEWw1M92Pt63Vbq7EjBpvk.jpg",
