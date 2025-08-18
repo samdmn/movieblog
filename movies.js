@@ -2,6 +2,21 @@
 
 const movies = [
     {
+        id: 32,
+        title: "Carrie",
+        year: "1976",
+        genre: ["Horreur", "Thriller"],
+        rating: "4",
+        review: "",
+        poster: "https://image.tmdb.org/t/p/original/uc3OvgmbnYaS5Y0BOjSmC1EmSz1.jpg",
+        images: [
+                "https://image.tmdb.org/t/p/original/zwJFfKQdfiptK2GY6N8GkZFrAxJ.jpg",
+                "https://image.tmdb.org/t/p/original/eMSRztuWq9q0vKp3oKakNpXgbtI.jpg",
+                "https://image.tmdb.org/t/p/original/bQYbSBVLPZo5sV9hDbSAs509Kv3.jpg"
+        ],
+        dateAdded: "18/08/2025"
+    },
+    {
         id: 31,
         title: "The Birth of a Nation",
         year: "1915",
