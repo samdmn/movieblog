@@ -2,12 +2,26 @@
 
 const movies = [
     {
+        id: 33,
+        title: "Fear and Desire",
+        year: "1952",
+        genre: ["Guerre", "Drame", "Thriller"],
+        rating: "2",
+        review: "",
+        poster: "https://image.tmdb.org/t/p/original/mj7CDh6d5nJDDmEhd0ft6s3L8CM.jpg",
+        images: [
+                "https://image.tmdb.org/t/p/original/e3o0Dwlzzpd4kJpOOJgVyMstnII.jpg",
+                "https://image.tmdb.org/t/p/original/weKbLiUJQpiFt8hSHHxvZeRJMYG.jpg"
+        ],
+        dateAdded: "19/08/2025"
+    },
+    {
         id: 32,
         title: "Carrie",
         year: "1976",
         genre: ["Horreur", "Thriller"],
         rating: "4",
-        review: "",
+        review: "J'ai adoré ce film, adapté du premier roman de Stephen King. Le problème c'est que du début jusqu'au bal, même si c'est important pour la construction de l'histoire, bah j'en ai rien à foutre quoi. Alors que la suite est vraiment géniale, la scène du bal et la suite... Cette photo, ce split screen, ce sang partout sur Carrie, c'est exceptionnel. Supplément je me suis chié dessus à la fin !",
         poster: "https://image.tmdb.org/t/p/original/uc3OvgmbnYaS5Y0BOjSmC1EmSz1.jpg",
         images: [
                 "https://image.tmdb.org/t/p/original/zwJFfKQdfiptK2GY6N8GkZFrAxJ.jpg",
