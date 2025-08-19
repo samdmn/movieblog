@@ -2,6 +2,36 @@
 
 const movies = [
     {
+        id: 35,
+        title: "Dressed to Kill",
+        year: "1980",
+        genre: ["Horreur", "Crime", "Drame", "Mystère", "Thriller"],
+        rating: "4",
+        review: "",
+        poster: "https://image.tmdb.org/t/p/original/oy1m5dd44foNrxV8U9l6Walx82V.jpg",
+        images: [
+                "https://image.tmdb.org/t/p/original/nXrKxxCG6zHh3fNPhEGcZ685bSR.jpg",
+                "https://image.tmdb.org/t/p/original/nZK1ef05i7fk5FFKtsnwvHbnQnp.jpg",
+                "https://image.tmdb.org/t/p/original/wmHfg56pvzmLCXz5Gs9D7d5rjvG.jpg"
+        ],
+        dateAdded: "19/08/2025"
+    },
+    {
+        id: 34,
+        title: "Carne",
+        year: "1991",
+        genre: ["Thriller", "Drame", "Crime"],
+        rating: "2.5",
+        review: "",
+        poster: "https://image.tmdb.org/t/p/original/7QNHk05hoi3dXaLFiZyXoj1I81b.jpg",
+        images: [
+                "https://image.tmdb.org/t/p/original/rz66efamwtqajULRptXu19NcRk3.jpg",
+                "https://image.tmdb.org/t/p/original/oUCzTZZSOJVITZF8LvEfvkGOCz8.jpg",
+                "https://image.tmdb.org/t/p/original/zoObBpr4g2xeCnEWNxvlrBpGY3B.jpg"
+        ],
+        dateAdded: "19/08/2025"
+    },
+    {
         id: 33,
         title: "Fear and Desire",
         year: "1952",
