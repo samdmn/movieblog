@@ -2,10 +2,25 @@
 
 const movies = [
     {
+        id: 37,
+        title: "Body Double",
+        year: "1984",
+        genre: ["Crime", "Mystère", "Thriller"],
+        rating: "3.5",
+        review: "",
+        poster: "https://image.tmdb.org/t/p/original/3SPKa6Ie4eh4DoZ6Ctlu7HMQCW2.jpg",
+        images: [
+                "https://image.tmdb.org/t/p/original/p0ork5YUlCjn967w2fR1XlMdvbs.jpg",
+                "https://image.tmdb.org/t/p/original/8MZgK43QgU9OWdqZhNfMNaqKTVQ.jpg",
+                "https://image.tmdb.org/t/p/original/znunBeRD79Sm8wGFBXnIaLpeS4D.jpg"
+        ],
+        dateAdded: "20/08/2025"
+    },
+    {
         id: 36,
         title: "Le Voyage dans la Lune",
         year: "1902",
-        genre: ["science-fiction", "Aventure"],
+        genre: ["Science-fiction", "Aventure"],
         rating: "",
         review: "J'ai demandé à ChatGPT \"donne moi une liste de films à regarder pour aborder chaque époque du cinéma\" et c'est le deuxième film qu'il m'a proposé. Chaque fois je me dis qu'à l'époque ils ont dû péter leur crâne en voyant ça. J'ai été surpris par l'inventivité des effets spéciaux et je me demande comment ils ont fait. Apparemment, c'est le premier film de science-fiction de l'histoire du cinéma.",
         poster: "https://image.tmdb.org/t/p/original/3jD6TlobtVWK5jDUCyPGy6nEzm4.jpg",
