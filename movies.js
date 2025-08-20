@@ -2,12 +2,27 @@
 
 const movies = [
     {
+        id: 36,
+        title: "Le Voyage dans la Lune",
+        year: "1902",
+        genre: ["science-fiction", "Aventure"],
+        rating: "",
+        review: "J'ai demandé à ChatGPT \"donne moi une liste de films à regarder pour aborder chaque époque du cinéma\" et c'est le deuxième film qu'il m'a proposé. Chaque fois je me dis qu'à l'époque ils ont dû péter leur crâne en voyant ça. J'ai été surpris par l'inventivité des effets spéciaux et je me demande comment ils ont fait. Apparemment, c'est le premier film de science-fiction de l'histoire du cinéma.",
+        poster: "https://image.tmdb.org/t/p/original/3jD6TlobtVWK5jDUCyPGy6nEzm4.jpg",
+        images: [
+                "https://image.tmdb.org/t/p/original/g67r1eiQD3ERSEQFCFkSn7TeGw5.jpg",
+                "https://image.tmdb.org/t/p/original/kJSnhBQZyCcbqxMZJuDby8ULcfS.jpg",
+                "https://image.tmdb.org/t/p/original/jeC1kzwWnZTuXl7xF4E5D70BD8c.jpg"
+        ],
+        dateAdded: "20/08/2025"
+    },
+    {
         id: 35,
         title: "Dressed to Kill",
         year: "1980",
         genre: ["Horreur", "Crime", "Drame", "Mystère", "Thriller"],
         rating: "4",
-        review: "",
+        review: "J'ai beaucoup aimé ce thriller de Brian De Palma. L'affiche originale du film le vend comme un \"maitre du macabre\" mais pour moi il est davantage maitre du suspense. C'est pas pour rien si Hitchcock est cité comme une de ses influences majeures. La scène d'ouverture est incroyable bien que très male gaze orientée. La scène dans le musée n'est pas sans rappeler celle de Vertigo. J'ai été surpris que le personnage d'Angie Dickinson meure aussi tôt dans le film. Et puis cette scène de fin m'a donné la boule au ventre, c'était vraiment magistral au niveau de la tension que ça a instauré en moi. Le plot twist, avec du recul, était prévisible mais j'ai été pris au dépourvu.",
         poster: "https://image.tmdb.org/t/p/original/oy1m5dd44foNrxV8U9l6Walx82V.jpg",
         images: [
                 "https://image.tmdb.org/t/p/original/nXrKxxCG6zHh3fNPhEGcZ685bSR.jpg",
@@ -22,7 +37,7 @@ const movies = [
         year: "1991",
         genre: ["Thriller", "Drame", "Crime"],
         rating: "2.5",
-        review: "",
+        review: "Un petit visionnage de ce moyen-métrage de Gaspar Noé pour passer le temps et pour compléter sa filmographie. C'est du Noé tout craché, bien pessimiste, bien trash, bien dérangeant. J'ai kiffé la mise en scène comme toujours avec Noé, et aussi l'acting de Nahon et sa voix off. Mais l'histoire m'a complétement laissé de marbre. Il existe une suite à ce moeyn-métrage : Seul contre Tous. Je pense qu'il faut l'avoir vue pour mieux apprécier Carne.",
         poster: "https://image.tmdb.org/t/p/original/7QNHk05hoi3dXaLFiZyXoj1I81b.jpg",
         images: [
                 "https://image.tmdb.org/t/p/original/rz66efamwtqajULRptXu19NcRk3.jpg",
@@ -37,7 +52,7 @@ const movies = [
         year: "1952",
         genre: ["Guerre", "Drame", "Thriller"],
         rating: "2",
-        review: "",
+        review: "Premier film de Kubrick. On ressent sur quelques images son passé de photographe, mais on ressent surtout le petit budget de ce film. Kubrick de son vivant à lui-même voulu interdire la diffusion de ce film qu'il jugeait prétentieux.",
         poster: "https://image.tmdb.org/t/p/original/mj7CDh6d5nJDDmEhd0ft6s3L8CM.jpg",
         images: [
                 "https://image.tmdb.org/t/p/original/e3o0Dwlzzpd4kJpOOJgVyMstnII.jpg",
@@ -66,7 +81,7 @@ const movies = [
         year: "1915",
         genre: ["Drame", "Histoire", "Guerre"],
         rating: "1",
-        review: "J'ai demandé à ChatGPT \"donne moi une liste de films à regarder pour aborder chaque époque du cinéma\" et c'est le deuxième film qu'il m'a proposé. C'est moche, long et raciste, mais c'est le premier blockbuster de l'histoire du cinéma.",
+        review: "J'ai demandé à ChatGPT \"donne moi une liste de films à regarder pour aborder chaque époque du cinéma\" et c'est le troisème film qu'il m'a proposé. C'est moche, long et raciste, mais c'est le premier blockbuster de l'histoire du cinéma.",
         poster: "https://image.tmdb.org/t/p/original/f9MkgI1ObRVvJwWgJyWtRbgyWng.jpg",
         images: [
                 "https://image.tmdb.org/t/p/original/4H4RAeeykpi0ijvu3wYgV346y06.jpg",
