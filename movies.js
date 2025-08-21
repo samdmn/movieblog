@@ -2,6 +2,21 @@
 
 const movies = [
     {
+        id: 39,
+        title: "The Ugly Stepsister",
+        year: "2025",
+        genre: ["Fantaisie", "Comédie", "Drame", "Horreur"],
+        rating: "2.5",
+        review: "de 1 : elle est même pas moche<br>de 2 : sa daronne la pute<br>de 3 : belle bite",
+        poster: "https://image.tmdb.org/t/p/original/uNc8VBHRxo9c0M2vnGS8PtihRLQ.jpg",
+        images: [
+                "https://image.tmdb.org/t/p/original/eQV9rSQ6S1ja4lGTwHTnQuVhoG.jpg",
+                "https://image.tmdb.org/t/p/original/5ony4q8mPMspZ0tO6eZn5bjTtEM.jpg",
+                "https://image.tmdb.org/t/p/original/jMkaxw1VGQrJmTGhhAG8wINfAk8.jpg"
+        ],
+        dateAdded: "21/08/2025"
+    },
+    {
         id: 38,
         title: "Superman",
         year: "2025",
