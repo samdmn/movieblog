@@ -2,6 +2,21 @@
 
 const movies = [
     {
+        id: 38,
+        title: "Superman",
+        year: "2025",
+        genre: ["Science-fiction", "Action", "Aventure"],
+        rating: "3.5",
+        review: "",
+        poster: "https://image.tmdb.org/t/p/original/ombsmhYUqR4qqOLOxAyr5V8hbyv.jpg",
+        images: [
+                "https://image.tmdb.org/t/p/original/dCJbGbDv6kjIZNVTW0AHolsb6vP.jpg",
+                "https://image.tmdb.org/t/p/original/eteyxgGEje1D5BPgpGsTWGevS39.jpg",
+                "https://image.tmdb.org/t/p/original/1ItGGdOYifWNRJ3fNhiS9SSmdZM.jpg"
+        ],
+        dateAdded: "21/08/2025"
+    },
+    {
         id: 37,
         title: "Body Double",
         year: "1984",
