@@ -2,6 +2,21 @@
 
 const movies = [
     {
+        id: 41,
+        title: "The Kid",
+        year: "1921",
+        genre: ["Drame", "Comédie"],
+        rating: "4",
+        review: "",
+        poster: "https://image.tmdb.org/t/p/original/qtUT2ZznzpvhZ21wAG1AxXvYdk.jpg",
+        images: [
+                "https://image.tmdb.org/t/p/original/qxUd8WgfkKIoxlmKFWTjddAOJDz.jpg",
+                "https://image.tmdb.org/t/p/original/l2dMT2olapy5dyWktIXEkuF1mKL.jpg",
+                "https://image.tmdb.org/t/p/original/yJvv7kDmeWT18jUSW2ZugZmYg0i.jpg"
+        ],
+        dateAdded: "22/08/2025"
+    },
+    {
         id: 40,
         title: "mother!",
         year: "2017",
