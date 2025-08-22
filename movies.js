@@ -22,7 +22,7 @@ const movies = [
         year: "2025",
         genre: ["Science-fiction", "Action", "Aventure"],
         rating: "3.5",
-        review: "",
+        review: "Les films de super-héros ne seront jamais mes films préférés. Mais ce Superman de James Gunn est un blockbuster franchement honnête. Il filme les scènes de combat assez ingénieusement, je sais pas comment il a fait ça mais par moment on dirait que c'est pas filmé par une caméra mais par un drone, comme si on était dans l'espace en mode créatif comme sur Fortnite mdrrr. J'ai bien aimé Krypto et Green Lantern. Mais j'ai du mal avec cette légèreté, cet humour façon James Gunn. Mec si je vais voir Superman c'est pour le voir sauver le monde, pas pour me marrer",
         poster: "https://image.tmdb.org/t/p/original/ombsmhYUqR4qqOLOxAyr5V8hbyv.jpg",
         images: [
                 "https://image.tmdb.org/t/p/original/dCJbGbDv6kjIZNVTW0AHolsb6vP.jpg",
@@ -37,7 +37,7 @@ const movies = [
         year: "1984",
         genre: ["Crime", "Mystère", "Thriller"],
         rating: "3.5",
-        review: "",
+        review: "J'ai été pris dans le film. Y'a toujours des scènes passionnantes chez De Palma, qui instaurent un tension de dingue. Dans ce film je retiens la scène du centre commercial, où Jake suit Gloria très maladroitement pour la protéger de l'indien. C'est une scène qui m'a fait penser à celle du musée de Dressed to Kill. Le film est néanmoins loin d'être parfait, kitsch par moment, la fin est rushée.<br>Body Double est un film fait par un homme, pour les hommes.",
         poster: "https://image.tmdb.org/t/p/original/3SPKa6Ie4eh4DoZ6Ctlu7HMQCW2.jpg",
         images: [
                 "https://image.tmdb.org/t/p/original/p0ork5YUlCjn967w2fR1XlMdvbs.jpg",
