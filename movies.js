@@ -2,6 +2,21 @@
 
 const movies = [
     {
+        id: 40,
+        title: "mother!",
+        year: "2017",
+        genre: ["Drame", "Horreur"],
+        rating: "3",
+        review: "",
+        poster: "https://image.tmdb.org/t/p/original/qQ69kTStBSj5yK6kse1bzF8MTjP.jpg",
+        images: [
+                "https://image.tmdb.org/t/p/original/1PZzp9LMfy9hh7q00jSczlKbdDI.jpg",
+                "https://image.tmdb.org/t/p/original/9JeYbrXjnrP1dDOvxswIgaXXUKL.jpg",
+                "https://image.tmdb.org/t/p/original/ezmC7E6E7djl8GPm9bH7g95lzmI.jpg"
+        ],
+        dateAdded: "22/08/2025"
+    },
+    {
         id: 39,
         title: "The Ugly Stepsister",
         year: "2025",
