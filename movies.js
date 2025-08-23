@@ -2,12 +2,27 @@
 
 const movies = [
     {
+        id: 42,
+        title: "Sympathy for Mr. Vengeance",
+        year: "2002",
+        genre: ["Thriller", "Action", "Drame"],
+        rating: "4",
+        review: "Sympathy for Mr. Vengeance est un film qui prend son temps pour démarrer, mais une fois qu'il est lancé il ne s'arrête plus. C'est un film dur et violent, où aucun personnage n'est véritablement méchant gratuitement. Tout le monde a ses raisons, mais la vengeance apporte la vengeance et c'est un cercle vicieux dont personne ne sort. Park Chan-wook a énormément d'idées de mise en scène, il y a quasiment une idée par plan. Seul point négatif au delà des longueurs du début : la photo, selon moi, est trop surexposée tout le film. Je ne m'y connais pas assez pour juger mais j'avais vraiment l'impression de me prendre des flashs dans la gueule.",
+        poster: "https://image.tmdb.org/t/p/original/qtB1B1KcmggRfuhZELQ08aIGBV1.jpg",
+        images: [
+                "https://image.tmdb.org/t/p/original/kO2nOycxztWI3Jt9KUrEZMjHfrM.jpg",
+                "https://image.tmdb.org/t/p/original/ctA83AEOo0XGZRvibkCpXVkZy5.jpg",
+                "https://image.tmdb.org/t/p/original/6WMeEmwXWKwrWBd6uDXjtWPigzM.jpg"
+        ],
+        dateAdded: "22/08/2025"
+    },
+    {
         id: 41,
         title: "The Kid",
         year: "1921",
         genre: ["Drame", "Comédie"],
         rating: "4",
-        review: "",
+        review: "Premier long-métrage de Chaplin et l'un des meilleurs. C'est fou comme Chaplin avait une ingéniosité dingue pour les scénarios, la mise en place des gags. C'est méticuleux. Simple mais bougrement efficace. Toujours avec un regard critique sur les classes sociales. Le gosse joue tellement bien et est adorable.",
         poster: "https://image.tmdb.org/t/p/original/qtUT2ZznzpvhZ21wAG1AxXvYdk.jpg",
         images: [
                 "https://image.tmdb.org/t/p/original/qxUd8WgfkKIoxlmKFWTjddAOJDz.jpg",
@@ -22,7 +37,7 @@ const movies = [
         year: "2017",
         genre: ["Drame", "Horreur"],
         rating: "3",
-        review: "",
+        review: "Jennifer Lawrence joue bien mais franchement le film jsp",
         poster: "https://image.tmdb.org/t/p/original/qQ69kTStBSj5yK6kse1bzF8MTjP.jpg",
         images: [
                 "https://image.tmdb.org/t/p/original/1PZzp9LMfy9hh7q00jSczlKbdDI.jpg",
