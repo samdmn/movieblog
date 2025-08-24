@@ -2,6 +2,36 @@
 
 const movies = [
     {
+        id: 44,
+        title: "Match Point",
+        year: "2005",
+        genre: ["Romance", "Crime", "Thriller", "Drame"],
+        rating: "4.5",
+        review: "\"The man who said \"I'd rather be lucky than good\" saw deeply into life. People are afraid to face how great a part of life is dependent on luck. It's scary to think so much is out of one's control. There are moments in a match when the ball hits the top of the net, and for a split second, it can either go forward or fall back. With a little luck, it goes forward, and you win. Or maybe it doesn't, and you lose.\"",
+        poster: "https://image.tmdb.org/t/p/original/pxb7glzXxJ2Ij54RgL6w1ISfBiP.jpg",
+        images: [
+                "https://image.tmdb.org/t/p/original/w281eYXUFwrcPLiifaJRpE2LwlA.jpg",
+                "https://image.tmdb.org/t/p/original/ifuOytKQPKe5GQwu9m3Hai2wr8R.jpg",
+                "https://image.tmdb.org/t/p/original/tR2VPcdQ8TlNzsiLtumsiFPpeMv.jpg"
+        ],
+        dateAdded: "23/08/2025"
+    },
+    {
+        id: 43,
+        title: "Lady Vengeance",
+        year: "2005",
+        genre: ["Thriller", "Drame"],
+        rating: "2.5",
+        review: "",
+        poster: "https://image.tmdb.org/t/p/original/7F7Ozn0QpqkVvuv1kC2XpbuFvn9.jpg",
+        images: [
+                "https://image.tmdb.org/t/p/original/wufzbjsLm0tUvbFOgGL6zzrJQe.jpg",
+                "https://image.tmdb.org/t/p/original/lgET49hvDpBqlfREz0S615vGNkT.jpg",
+                "https://image.tmdb.org/t/p/original/wP1nu98mgiSOyuPmMWdZ8109S9j.jpg"
+        ],
+        dateAdded: "23/08/2025"
+    },
+    {
         id: 42,
         title: "Sympathy for Mr. Vengeance",
         year: "2002",
