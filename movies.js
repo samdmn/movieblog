@@ -2,6 +2,21 @@
 
 const movies = [
     {
+        id: 45,
+        title: "A Rainy Day in New York",
+        year: "2019",
+        genre: ["Comédie", "Romance"],
+        rating: "3.5",
+        review: "",
+        poster: "https://image.tmdb.org/t/p/original/uPGq1mkEXznUpapDmOSxbsybjfp.jpg",
+        images: [
+                "https://image.tmdb.org/t/p/original/8fhhWTF9R3ShHXVRKq9TPdjZjGe.jpg",
+                "https://image.tmdb.org/t/p/original/qr1QsRvNSKsgQbgZ6Qkm0X5Pd0l.jpg",
+                "https://image.tmdb.org/t/p/original/6fkqwqLEcDZOEAnBBfKAniwNxtx.jpg"
+        ],
+        dateAdded: "24/08/2025"
+    },
+    {
         id: 44,
         title: "Match Point",
         year: "2005",
