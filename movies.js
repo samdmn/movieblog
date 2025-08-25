@@ -2,12 +2,27 @@
 
 const movies = [
     {
+        id: 46,
+        title: "Le Mépris",
+        year: "1963",
+        genre: ["Drame", "Romance"],
+        rating: "2",
+        review: "J'ai trouvé le personnage de Bardot détestable, le film ennuyant, et j'ai pas compris ce que le réalisateur a voulu nous faire comprendre. Le seule mépris que j'ai ressenti c'est celui que Godard a eu envers moi. Quelle belle approche de la Nouvelle Vague ! (j'espère qu'ils ne sont pas tous comme ça)",
+        poster: "https://image.tmdb.org/t/p/original/50pGouCm8YQPgElX2oXlYFlGIQM.jpg",
+        images: [
+                "https://image.tmdb.org/t/p/original/qBpRJrbaofPzb9pwgi5LiuNDLmM.jpg",
+                "https://image.tmdb.org/t/p/original/qXKjDJP6jANqUkGHralN2ukWf5T.jpg",
+                "https://image.tmdb.org/t/p/original/eRt6jqwUBhl4oCpEYXJP1irqwjU.jpg"
+        ],
+        dateAdded: "24/08/2025"
+    },
+    {
         id: 45,
         title: "A Rainy Day in New York",
         year: "2019",
         genre: ["Comédie", "Romance"],
         rating: "3.5",
-        review: "",
+        review: "Cette fois-ci je me mate un film de Woody Allen plus récent, déjà parce que le pitch me plait, ensuite parce que j'avais envie d'enfin voir un Allen avec une qualité vidéo acceptable, mais surtout pour voir ce que valent des acteurs de ma génération dans un film de Woody Allen. C'est donc sans surprise que je découvre que si j'aime bien les films de Woody Allen, c'est parce qu'il écrit lui-même ses scénarios. J 'ai un lien d'âme avec les histoires qu'il raconte. J'ai adoré l'alchimie entre Timothée Chalamet et Selena Gomez, c'est dommage qu'il n'y ait pas plus de scènes entre eux. Ce film reste cependant moins bon que les excellents Midnight in Paris et Match Point.",
         poster: "https://image.tmdb.org/t/p/original/uPGq1mkEXznUpapDmOSxbsybjfp.jpg",
         images: [
                 "https://image.tmdb.org/t/p/original/8fhhWTF9R3ShHXVRKq9TPdjZjGe.jpg",
@@ -37,7 +52,7 @@ const movies = [
         year: "2005",
         genre: ["Thriller", "Drame"],
         rating: "2.5",
-        review: "",
+        review: "La narration m'a laissé de côté, mais effectivement la vengeance était bien harrr comme on dit. Le moins bon de la trilogie, bien derrière Sympathy for Mr. Vengeance et Oldboy.",
         poster: "https://image.tmdb.org/t/p/original/7F7Ozn0QpqkVvuv1kC2XpbuFvn9.jpg",
         images: [
                 "https://image.tmdb.org/t/p/original/wufzbjsLm0tUvbFOgGL6zzrJQe.jpg",
