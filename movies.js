@@ -2,6 +2,21 @@
 
 const movies = [
     {
+        id: 48,
+        title: "Les Garçons et Guillaume, à table !",
+        year: "2013",
+        genre: ["Comédie"],
+        rating: "3.5",
+        review: "",
+        poster: "https://image.tmdb.org/t/p/original/unR68DSN58QuCkASgC6HW89CAih.jpg",
+        images: [
+                "https://image.tmdb.org/t/p/original/9hU1Mp2fkIOkLeuwznzM4mVSDvF.jpg",
+                "https://image.tmdb.org/t/p/original/5cVwd0ORqYuiDA2fUd1t6hDgnIZ.jpg",
+                "https://i.pathehome.com/product/global/phf-5axkyoz11b/d54abc-lesgarconsetguillaumeatablle_s1_fr.jpg?w=3840&fit=crop&crop=top%2Cleft&auto=format&q=45"
+        ],
+        dateAdded: "25/08/2025"
+    },
+    {
         id: 47,
         title: "In the Mood for Love",
         year: "2000",
