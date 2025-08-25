@@ -2,6 +2,21 @@
 
 const movies = [
     {
+        id: 47,
+        title: "In the Mood for Love",
+        year: "2000",
+        genre: ["Drame", "Romance"],
+        rating: "3",
+        review: "",
+        poster: "https://image.tmdb.org/t/p/original/8BgGbbWiLNhPtkMkN0gGTnbtvBv.jpg",
+        images: [
+                "https://image.tmdb.org/t/p/original/xmyEE9X057s4eNYktFjaEFNaILM.jpg",
+                "https://image.tmdb.org/t/p/original/2USUGY484L6sUkjeD1Y0rG8uRC9.jpg",
+                "https://image.tmdb.org/t/p/original/v8H2nAJnqUnmPJRrQInNYpXMzOL.jpg"
+        ],
+        dateAdded: "25/08/2025"
+    },
+    {
         id: 46,
         title: "Le Mépris",
         year: "1963",
