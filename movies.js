@@ -2,12 +2,42 @@
 
 const movies = [
     {
+        id: 50,
+        title: "The Hangover",
+        year: "2009",
+        genre: ["Comédie"],
+        rating: "3.5",
+        review: "",
+        poster: "https://image.tmdb.org/t/p/original/A0uS9rHR56FeBtpjVki16M5xxSW.jpg",
+        images: [
+                "https://image.tmdb.org/t/p/original/sV49hOlUky6AhVYl4K0d3rergTA.jpg",
+                "https://image.tmdb.org/t/p/original/fJTDXdfFw6chsPXCluu6Elg0nMd.jpg",
+                "https://image.tmdb.org/t/p/original/kPb1IW4vlqT6nil82ZaYIeafkZR.jpg"
+        ],
+        dateAdded: "27/08/2025"
+    },
+    {
+        id: 49,
+        title: "KPop Demon Hunters",
+        year: "2025",
+        genre: ["Fantaisie", "Action", "Comédie", "Musique", "Animation"],
+        rating: "3.5",
+        review: "KPop Demon Hunters est un film d'animation très généreux, mais qui me touche moins qu'un Flow ou qu'un Robot Sauvage par exemple. J'avoue que j'en ai un peu rien à foutre de la KPop à vrai dire.",
+        poster: "https://image.tmdb.org/t/p/original/22AouvwlhlXbe3nrFcjzL24bvWH.jpg",
+        images: [
+                "https://image.tmdb.org/t/p/original/rJjhOuRFldNF0OWSuSk4PiCLmeA.jpg",
+                "https://image.tmdb.org/t/p/original/l3ycQYwWmbz7p8otwbomFDXIEhn.jpg",
+                "https://image.tmdb.org/t/p/original/6otLC8o5fM6ssMmeUDegZ8OrXES.jpg"
+        ],
+        dateAdded: "26/08/2025"
+    },
+    {
         id: 48,
         title: "Les Garçons et Guillaume, à table !",
         year: "2013",
         genre: ["Comédie"],
         rating: "3.5",
-        review: "",
+        review: "J'ai bien aimé ce film, qui est une adaptation de la pièce de théâtre autobiographique de Guillaume Gallienne. Il se met à nu, parle de son enfance, de sa mère, de son père, de sa sexualité. C'était touchant et drôle mais j'avoue j'ai pas vu venir le coming-out hétérosexuel (coming-in ?).",
         poster: "https://image.tmdb.org/t/p/original/unR68DSN58QuCkASgC6HW89CAih.jpg",
         images: [
                 "https://image.tmdb.org/t/p/original/9hU1Mp2fkIOkLeuwznzM4mVSDvF.jpg",
@@ -22,7 +52,7 @@ const movies = [
         year: "2000",
         genre: ["Drame", "Romance"],
         rating: "3",
-        review: "",
+        review: "C'est beau et puissant, mais j'ai pas réussi à m'attacher à leur histoire. Je trouve que le titre québécois est plus parlant : 'Les Silences du Désir'. C'est exactement ce dont parle ce film, le désir, la frustration, le non-dit. La réalisation est magnifique, la photographie aussi. Je ne suis juste pas rentré dedans.",
         poster: "https://image.tmdb.org/t/p/original/8BgGbbWiLNhPtkMkN0gGTnbtvBv.jpg",
         images: [
                 "https://image.tmdb.org/t/p/original/xmyEE9X057s4eNYktFjaEFNaILM.jpg",
