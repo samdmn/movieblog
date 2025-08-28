@@ -2,12 +2,42 @@
 
 const movies = [
     {
+        id: 52,
+        title: "Elio",
+        year: "2025",
+        genre: ["Comédie", "Science-fiction", "Aventure", "Animation", "Famille"],
+        rating: "4",
+        review: "La scène où ils découvrent la navette dans la base militaire sur Terre ça m'a fait penser à la météorite de Fortnite donc j'ai kiffé allez hop 4 étoiles",
+        poster: "https://image.tmdb.org/t/p/original/w2ARwtc1zoh0pyfwmyhpZHwuXgK.jpg",
+        images: [
+                "https://image.tmdb.org/t/p/original/7yzpHj2ssuwJERjj4y2MDoZDtRN.jpg",
+                "https://image.tmdb.org/t/p/original/3eenSxPGTZvUW12Z0AKlEmdBFrA.jpg",
+                "https://image.tmdb.org/t/p/original/efnG1tkdzg5nIdCV7ABfm7XzNai.jpg"
+        ],
+        dateAdded: "28/08/2025"
+    },
+    {
+        id: 51,
+        title: "Licorice Pizza",
+        year: "2021",
+        genre: ["Drame", "Romance", "Comédie"],
+        rating: "4",
+        review: "Paul Thomas Anderson porte un regard nostalgique sur les années 70, dans la vallée de San Fernando où il a grandi. On suit un ado de 15 ans qui tombe amoureux d'une jeune femme de 25 ans. Les acteurs sont excellents, toute la partie avec Bradley Cooper est géniale, j'ai passé un très bon moment. Le seul bémol selon moi : on ne ressent pas vraiment la différence d'âge entre les deux protagonistes.",
+        poster: "https://image.tmdb.org/t/p/original/ivXtvzfliGvoJ1DhSHIGyYBToWe.jpg",
+        images: [
+                "https://image.tmdb.org/t/p/original/gnw8yTqMP3H3JWOvuMurn1wsY3V.jpg",
+                "https://image.tmdb.org/t/p/original/27YCrosW5GIL1cHewN7Ew7qbs7E.jpg",
+                "https://image.tmdb.org/t/p/original/9tPV2VnrikL8LPcKnnGODU9P9Ma.jpg"
+        ],
+        dateAdded: "27/08/2025"
+    },
+    {
         id: 50,
         title: "The Hangover",
         year: "2009",
         genre: ["Comédie"],
         rating: "3.5",
-        review: "",
+        review: "Pour moi c'est vraiment le film d'adolescent par excellence. Irresponsable mais tellement drôle, les acteurs ont dû s'amuser lors du tournage et le scénariste pendant l'écriture. J'ai passé un bon moment.",
         poster: "https://image.tmdb.org/t/p/original/A0uS9rHR56FeBtpjVki16M5xxSW.jpg",
         images: [
                 "https://image.tmdb.org/t/p/original/sV49hOlUky6AhVYl4K0d3rergTA.jpg",
