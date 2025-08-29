@@ -2,6 +2,21 @@
 
 const movies = [
     {
+        id: 53,
+        title: "Shoplifters",
+        year: "2018",
+        genre: ["Drame", "Thriller", "Crime"],
+        rating: "4.5",
+        review: "",
+        poster: "https://image.tmdb.org/t/p/original/qjYptA2Kk7Z7WM0iTf7aNYFucfD.jpg",
+        images: [
+                "https://image.tmdb.org/t/p/original/ortZhaTHz2YEsbKAiLlLWfSMOUd.jpg",
+                "https://image.tmdb.org/t/p/original/Z1JeznJExodyj0iUbL1wgkts88.jpg",
+                "https://image.tmdb.org/t/p/original/wYG0n3F8fPPm3Uz87Ru7DafFiT7.jpg"
+        ],
+        dateAdded: "28/08/2025"
+    },
+    {
         id: 52,
         title: "Elio",
         year: "2025",
