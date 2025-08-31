@@ -2,12 +2,27 @@
 
 const movies = [
     {
+        id: 54,
+        title: "Sorry, Baby",
+        year: "2025",
+        genre: ["Comédie", "Drame"],
+        rating: "4",
+        review: "Ne regardez pas de bande-annonce ni ne lisez de synopsis avant de voir le film, c'est encore plus fort quand on comprend ce qu'il se passe sur le tas. C'est un film sur la reconstruction après des événements traumatisants. C'est juste, bien écrit et touchant.",
+        poster: "https://image.tmdb.org/t/p/original/iq1QtN1H8AVEBfl1SgNAqhMgTbQ.jpg",
+        images: [
+                "https://image.tmdb.org/t/p/original/nVHEjkA8vuEGJLfNUOmVW5md6yn.jpg",
+                "https://image.tmdb.org/t/p/original/lzaiAWIJZRZ0QD78IlJDydPRk8B.jpg",
+                "https://image.tmdb.org/t/p/original/aCgQT8GT0yU51AxmrkY7qijKbqb.jpg"
+        ],
+        dateAdded: "29/08/2025"
+    },
+    {
         id: 53,
         title: "Shoplifters",
         year: "2018",
         genre: ["Drame", "Thriller", "Crime"],
         rating: "4.5",
-        review: "",
+        review: "Palme d'or méritée pour ce film japonais qui parle d'une famille vivant dans la pauvreté en banlieue de Tokyo. Je n'ai rien vu venir.",
         poster: "https://image.tmdb.org/t/p/original/qjYptA2Kk7Z7WM0iTf7aNYFucfD.jpg",
         images: [
                 "https://image.tmdb.org/t/p/original/ortZhaTHz2YEsbKAiLlLWfSMOUd.jpg",
