@@ -2,6 +2,21 @@
 
 const movies = [
     {
+        id: 55,
+        title: "Oslo, August 31st",
+        year: "2011",
+        genre: ["Drame"],
+        rating: "5",
+        review: "",
+        poster: "https://image.tmdb.org/t/p/original/89jwBEQfiCHpNhPBU4hi8F8mzOi.jpg",
+        images: [
+                "https://image.tmdb.org/t/p/original/swfbzWFFCPJSoiPpzkFRAsOQRnf.jpg",
+                "https://image.tmdb.org/t/p/original/roCQcDKrrFjXEMDDMxEKpeL6h0F.jpg",
+                "https://image.tmdb.org/t/p/original/s3zUWhhTY6OSyWlyrVyAUmptLg0.jpg"
+        ],
+        dateAdded: "31/08/2025"
+    },
+    {
         id: 54,
         title: "Sorry, Baby",
         year: "2025",
