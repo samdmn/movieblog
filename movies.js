@@ -2,6 +2,21 @@
 
 const movies = [
     {
+        id: 56,
+        title: "Hot Milk",
+        year: "2025",
+        genre: ["Drame"],
+        rating: "2",
+        review: "",
+        poster: "https://image.tmdb.org/t/p/original/acd3f6ZU3v4vX7TCKDRZOsNM8W5.jpg",
+        images: [
+                "https://image.tmdb.org/t/p/original/j1PV8qthKDf3Gh0BrrXU8U3baZy.jpg",
+                "https://image.tmdb.org/t/p/original/vg6xWyxZmoXpmxibhrZoEROJ0vj.jpg",
+                "https://image.tmdb.org/t/p/original/uomxZsHuXzW6pmd0Jwv7QbANGzs.jpg"
+        ],
+        dateAdded: "01/09/2025"
+    },
+    {
         id: 55,
         title: "Oslo, August 31st",
         year: "2011",
