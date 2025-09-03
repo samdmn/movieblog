@@ -2,12 +2,27 @@
 
 const movies = [
     {
+        id: 57,
+        title: "Split",
+        year: "2016",
+        genre: ["Horreur", "Thriller"],
+        rating: "3",
+        review: "Toute ma vie j'étais persuadé que c'était Tom Hanks sur l'affiche, mais en fait non.",
+        poster: "https://image.tmdb.org/t/p/original/lli31lYTFpvxVBeFHWoe5PMfW5s.jpg",
+        images: [
+                "https://image.tmdb.org/t/p/original/eetVqVfzLvWOlL9N2b0k4CSILJu.jpg",
+                "https://image.tmdb.org/t/p/original/kl0fmmrJy6KrzGesWejIl5KiSpi.jpg",
+                "https://image.tmdb.org/t/p/original/s4vx70tgf8Lu5tNW3s7JVNZIop9.jpg"
+        ],
+        dateAdded: "02/09/2025"
+    },
+    {
         id: 56,
         title: "Hot Milk",
         year: "2025",
         genre: ["Drame"],
         rating: "2",
-        review: "",
+        review: "Vu car il était en compétition au dernier festival de Berlin. Maintenant je comprends pourquoi il a pas gagné ^^",
         poster: "https://image.tmdb.org/t/p/original/acd3f6ZU3v4vX7TCKDRZOsNM8W5.jpg",
         images: [
                 "https://image.tmdb.org/t/p/original/j1PV8qthKDf3Gh0BrrXU8U3baZy.jpg",
