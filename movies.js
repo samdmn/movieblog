@@ -2,6 +2,51 @@
 
 const movies = [
     {
+        id: 60,
+        title: "Birdman or (The Unexpected Virtue of Ignorance)",
+        year: "2014",
+        genre: ["Drame", "Comédie"],
+        rating: "4.5",
+        review: "",
+        poster: "https://image.tmdb.org/t/p/original/rHUg2AuIuLSIYMYFgavVwqt1jtc.jpg",
+        images: [
+                "https://image.tmdb.org/t/p/original/5tDErYQ8Ne1N6dNAlxg8yYNUwRA.jpg",
+                "https://image.tmdb.org/t/p/original/gXboplsdDKprKA46IptKwDgY6Nr.jpg",
+                "https://image.tmdb.org/t/p/original/7WUkbe9eOB4C5SPsnA95JGYY2uC.jpg"
+        ],
+        dateAdded: "07/09/2025"
+    },
+    {
+        id: 59,
+        title: "Django Unchained",
+        year: "2012",
+        genre: ["Drame", "Western"],
+        rating: "4.5",
+        review: "",
+        poster: "https://image.tmdb.org/t/p/original/7oWY8VDWW7thTzWh3OKYRkWUlD5.jpg",
+        images: [
+                "https://image.tmdb.org/t/p/original/by7k8LWzRO4zVhwL1TunlwFdbx9.jpg",
+                "https://image.tmdb.org/t/p/original/7IrHTCH5yOLDblgJq98a1k9HXN9.jpg",
+                "https://image.tmdb.org/t/p/original/w6Fs4bIje1naeILo9KwAc1Y6bvP.jpg"
+        ],
+        dateAdded: "07/09/2025"
+    },
+    {
+        id: 58,
+        title: "Enter the Void",
+        year: "2009",
+        genre: ["Drame", "Fantaisie"],
+        rating: "3",
+        review: "Ne vous droguez pas 😉😉😉",
+        poster: "https://image.tmdb.org/t/p/original/skICGEadyeI3qiXbA1Pjx6sOoWU.jpg",
+        images: [
+                "https://image.tmdb.org/t/p/original/2Mlw0JRNZHXLYxbeJ0LmiCCTiok.jpg",
+                "https://image.tmdb.org/t/p/original/iTCgFU3FnCFUIRiBonWdfkG4r2D.jpg",
+                "https://image.tmdb.org/t/p/original/camdVc8vdgTcmHTKVddnhkHVblu.jpg"
+        ],
+        dateAdded: "04/09/2025"
+    },
+    {
         id: 57,
         title: "Split",
         year: "2016",
