@@ -13,6 +13,7 @@ document.addEventListener('DOMContentLoaded', function() {
         updateStats();
         generateFilters();
         setupEventListeners();
+        renderRatingsChart();
     }, 500);
 });
 
@@ -115,6 +116,85 @@ function updateStats() {
     document.getElementById('topGenre').textContent = topGenre;
 }
 
+function renderRatingsChart() {
+    const ratingsWithValues = movies
+        .filter(movie => movie.rating)
+        .map(movie => parseFloat(movie.rating));
+    
+    if (ratingsWithValues.length === 0) {
+        document.getElementById('ratingsChart').innerHTML = '<div style="text-align: center; color: #feca57;">Aucune note disponible</div>';
+        return;
+    }
+
+    // Créer des tranches de notes (0-1, 1-2, 2-3, 3-4, 4-5)
+    const ratingRanges = [
+        { min: 0, max: 1, label: '0-1★', count: 0 },
+        { min: 1, max: 2, label: '1-2★', count: 0 },
+        { min: 2, max: 3, label: '2-3★', count: 0 },
+        { min: 3, max: 4, label: '3-4★', count: 0 },
+        { min: 4, max: 5, label: '4-5★', count: 0 }
+    ];
+
+    // Compter les films dans chaque tranche
+    ratingsWithValues.forEach(rating => {
+        ratingRanges.forEach(range => {
+            if (rating > range.min && rating <= range.max) {
+                range.count++;
+            }
+        });
+    });
+
+    const maxCount = Math.max(...ratingRanges.map(r => r.count));
+    const colors = ['#ff4757', '#ff6b6b', '#feca57', '#48cae4', '#06ffa5'];
+
+    // Générer le graphique en barres
+    const chartHTML = ratingRanges.map((range, index) => {
+        const height = maxCount > 0 ? (range.count / maxCount) * 200 : 0;
+        const percentage = ratingsWithValues.length > 0 ? Math.round((range.count / ratingsWithValues.length) * 100) : 0;
+        
+        return `
+            <div style="display: flex; flex-direction: column; align-items: center; flex: 1;">
+                <div style="
+                    width: 40px;
+                    height: ${height}px;
+                    background: ${colors[index]};
+                    border-radius: 4px 4px 0 0;
+                    margin-bottom: 5px;
+                    position: relative;
+                    transition: all 0.3s ease;
+                " title="${range.count} films (${percentage}%)">
+                    <div style="
+                        position: absolute;
+                        top: -25px;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        color: white;
+                        font-size: 12px;
+                        font-weight: bold;
+                    ">${range.count}</div>
+                </div>
+                <div style="
+                    color: #feca57;
+                    font-size: 12px;
+                    font-weight: 500;
+                    text-align: center;
+                ">${range.label}</div>
+                <div style="
+                    color: rgba(255,255,255,0.7);
+                    font-size: 10px;
+                    margin-top: 2px;
+                ">${percentage}%</div>
+            </div>
+        `;
+    }).join('');
+
+    document.getElementById('ratingsChart').innerHTML = `
+        <div style="display: flex; align-items: end; gap: 20px; width: 100%; height: 240px; padding-top: 30px;">
+            ${chartHTML}
+        </div>
+    `;
+}
+
 function truncateText(text, maxLength = 200) {
     if (text.length <= maxLength) return text;
     return text.substr(0, maxLength) + '...';
@@ -124,7 +204,7 @@ function renderStars(rating) {
     const fullStars = Math.floor(rating);
     const halfStar = rating % 1 >= 0.5 ? 1 : 0;
     const emptyStars = 5 - fullStars - halfStar;
-    return '⭐'.repeat(fullStars) + (halfStar ? '⯪' : '') + '☆'.repeat(emptyStars);
+    return '⭐'.repeat(fullStars) + (halfStar ? '⭐' : '') + '☆'.repeat(emptyStars);
 }
 
 // Lightbox
@@ -141,6 +221,13 @@ document.getElementById('lightbox').addEventListener('click', function() {
 
 function addLightboxEvents() {
     document.querySelectorAll('.movie-image img').forEach(img => {
+        img.style.cursor = 'pointer';
+        img.addEventListener('click', () => openLightbox(img.src));
+    });
+}
+
+function addLightboxEvents() {
+    document.querySelectorAll('.movie-poster img').forEach(img => {
         img.style.cursor = 'pointer';
         img.addEventListener('click', () => openLightbox(img.src));
     });
