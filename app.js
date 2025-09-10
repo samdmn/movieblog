@@ -226,7 +226,7 @@ function addLightboxEvents() {
     });
 }
 
-function addLightboxEvents() {
+function addPosterLightboxEvents() {
     document.querySelectorAll('.movie-poster img').forEach(img => {
         img.style.cursor = 'pointer';
         img.addEventListener('click', () => openLightbox(img.src));
@@ -312,6 +312,7 @@ function renderMovies() {
         </div>
     `;
     addLightboxEvents();
+    addPosterLightboxEvents();
     renderPagination(totalPages);
 }
 
