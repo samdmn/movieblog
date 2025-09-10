@@ -2,6 +2,21 @@
 
 const movies = [
     {
+        id: 61,
+        title: "Rashômon",
+        year: "1950",
+        genre: ["Crime", "Drame", "Mystère"],
+        rating: "3.5",
+        review: "",
+        poster: "https://image.tmdb.org/t/p/original/cpO1iPdMFCuJvKjRx3cIONkMRTw.jpg",
+        images: [
+                "https://image.tmdb.org/t/p/original/d9z53KQbh0MohKXjGbm3OJpjH0.jpg",
+                "https://image.tmdb.org/t/p/original/n5YfMm7JC3q3EaDgWd5eqjC22yI.jpg",
+                "https://image.tmdb.org/t/p/original/SfhquX6l4ZDtW2OiD5lqI8hhql.jpg"
+        ],
+        dateAdded: "09/09/2025"
+    },
+    {
         id: 60,
         title: "Birdman or (The Unexpected Virtue of Ignorance)",
         year: "2014",
