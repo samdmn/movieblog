@@ -2,12 +2,27 @@
 
 const movies = [
     {
+        id: 63,
+        title: "Profs de fac, la vocation à l'épreuve",
+        year: "2023",
+        genre: ["Documentaire"],
+        rating: "3",
+        review: "Ceux qui veulent faire avancer la recherche sont privés de moyens, et c'est désolant.",
+        poster: "https://image.tmdb.org/t/p/original/8Br0fWzvExHqqBld0qj4ovWhiDc.jpg",
+        images: [
+                "https://focus.telerama.fr/2023/06/23/56/126/1505/849/1200/0/60/0/68cc455_1687531511313-profs-de-fac-la-vocation-ai-la-ei-preuve-a-la-gei-nei-rale-de-production-00007.jpg",
+                "https://img.lemde.fr/2023/08/10/0/149/1489/993/1440/960/60/0/087a128_1691662622925-profs-de-fac-la-vocation-ai-la-ei-preuve-a-la-gei-nei-rale-de-production-00027.jpg",
+                "https://images-film-documentaire.fr/film/410/988516CC06374286986CC9369D609410.jpg"
+        ],
+        dateAdded: "11/09/2025"
+    },
+    {
         id: 62,
         title: "Un pays qui se tient sage",
         year: "2020",
         genre: ["Documentaire"],
-        rating: "",
-        review: "",
+        rating: "4",
+        review: "Un très bon documentaire qui explore les violences de l'État, de société, mais surtout de police en France à travers plusieurs témoignages et images d'archive précieuses.",
         poster: "https://image.tmdb.org/t/p/original/9Pftr0NeLhMO8ogh230BQZAxBKh.jpg",
         images: [
                 "https://image.tmdb.org/t/p/original/pNBHZ3GMwjdSG5tge4tzlhtC2N7.jpg",
@@ -22,7 +37,7 @@ const movies = [
         year: "1950",
         genre: ["Crime", "Drame", "Mystère"],
         rating: "3.5",
-        review: "",
+        review: "Je ne pense pas que ce film me suivra longtemps, mais selon moi il mérite sa place dans l'histoire du cinéma rien que par son concept. Je ne vais même pas parler de mise en scène, j'ai pas fait d'études là dedans, je connais que les bases. Ce qui pour moi est beau dans ce film, c'est les deux lectures qu'on peut en faire. La première : les personnages ont chacun leur version des faits, et la racontent par leur subjectivité, ce qui mène à des témoignages contradictoires. La seconde : les personnages mentent délibérément par pur égoïsme, pour protéger leurs intêrets. Le film ne tranche pas entre les deux, et c'est ce qui, selon moi, le rend intéressant.",
         poster: "https://image.tmdb.org/t/p/original/cpO1iPdMFCuJvKjRx3cIONkMRTw.jpg",
         images: [
                 "https://image.tmdb.org/t/p/original/d9z53KQbh0MohKXjGbm3OJpjH0.jpg",
@@ -37,7 +52,7 @@ const movies = [
         year: "2014",
         genre: ["Drame", "Comédie"],
         rating: "4.5",
-        review: "",
+        review: "J'ai pris une vraie claque devant Birdman devant ce plan-séquence de 2 heures. Michael Keaton est excellent dans ce personnage complétement obsédé par sa gloire passée. Ce plan dans le shop avec les guirlandes colorées mama",
         poster: "https://image.tmdb.org/t/p/original/rHUg2AuIuLSIYMYFgavVwqt1jtc.jpg",
         images: [
                 "https://image.tmdb.org/t/p/original/5tDErYQ8Ne1N6dNAlxg8yYNUwRA.jpg",
@@ -52,7 +67,7 @@ const movies = [
         year: "2012",
         genre: ["Drame", "Western"],
         rating: "4.5",
-        review: "",
+        review: "Toujours excellent, je l'ai même revu à la hausse. Ce film contient une multitude d'idées de mise en scène et de plans magnifiques.",
         poster: "https://image.tmdb.org/t/p/original/7oWY8VDWW7thTzWh3OKYRkWUlD5.jpg",
         images: [
                 "https://image.tmdb.org/t/p/original/by7k8LWzRO4zVhwL1TunlwFdbx9.jpg",
