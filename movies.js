@@ -2,6 +2,21 @@
 
 const movies = [
     {
+        id: 62,
+        title: "Un pays qui se tient sage",
+        year: "2020",
+        genre: ["Documentaire"],
+        rating: "",
+        review: "",
+        poster: "https://image.tmdb.org/t/p/original/9Pftr0NeLhMO8ogh230BQZAxBKh.jpg",
+        images: [
+                "https://image.tmdb.org/t/p/original/pNBHZ3GMwjdSG5tge4tzlhtC2N7.jpg",
+                "https://image.tmdb.org/t/p/original/64GNjzc9qJ1KjgT2kN4RogkUjcj.jpg",
+                "https://image.tmdb.org/t/p/original/3FJJh36jW7iXIRTJk0Xye5uWdJf.jpg"
+        ],
+        dateAdded: "10/09/2025"
+    },
+    {
         id: 61,
         title: "Rashômon",
         year: "1950",
