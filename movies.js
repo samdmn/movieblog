@@ -2,6 +2,21 @@
 
 const movies = [
     {
+        id: 64,
+        title: "Voyage of Time: The IMAX Experience",
+        year: "2016",
+        genre: ["Documentaire"],
+        rating: "4",
+        review: "J'ai jamais vu un docu avec des images aussi folles wow",
+        poster: "https://image.tmdb.org/t/p/original/mjJyKhUroInIbIxWy1y7UhTR1am.jpg",
+        images: [
+                "https://m.media-amazon.com/images/M/MV5BMGVhMWVlMDUtZjllMi00MTM0LWE3NGQtOTRiMmNmODFjYzUzXkEyXkFqcGdeQVRoaXJkUGFydHlJbmdlc3Rpb25Xb3JrZmxvdw@@._V1_.jpg",
+                "https://cdn.theplaylist.net/wp-content/uploads/2016/10/15015220/VOT_FormationofMembranes_rgb.jpg",
+                "https://www.lesecransterribles.com/wp-content/uploads/2022/01/%C2%A9-D.-R.-1140x616.jpg"
+        ],
+        dateAdded: "13/09/2025"
+    },
+    {
         id: 63,
         title: "Profs de fac, la vocation à l'épreuve",
         year: "2023",
