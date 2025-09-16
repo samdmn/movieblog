@@ -2,6 +2,21 @@
 
 const movies = [
     {
+        id: 65,
+        title: "Bird",
+        year: "2024",
+        genre: ["Fantaisie", "Drame"],
+        rating: "3",
+        review: "",
+        poster: "https://image.tmdb.org/t/p/original/96LljvrTGesFPzRiytTrBgPV8W9.jpg",
+        images: [
+                "https://image.tmdb.org/t/p/original/wwtZN9fy6BaFguj6wGPV0ZtCLHD.jpg",
+                "https://image.tmdb.org/t/p/original/algHLdp5t53pfpuc97IE6zdxbFq.jpg",
+                "https://image.tmdb.org/t/p/original/qZbufNzfAPQzgGpAqWjBBWgGPP9.jpg"
+        ],
+        dateAdded: "16/09/2025"
+    },
+    {
         id: 64,
         title: "Voyage of Time: The IMAX Experience",
         year: "2016",
