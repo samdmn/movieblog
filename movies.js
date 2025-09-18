@@ -2,6 +2,51 @@
 
 const movies = [
     {
+        id: 68,
+        title: "Close",
+        year: "2022",
+        genre: ["Drame"],
+        rating: "4.5",
+        review: "",
+        poster: "https://image.tmdb.org/t/p/original/h9AAQbozDUc0hYJspmYZfAeCfM2.jpg",
+        images: [
+                "https://image.tmdb.org/t/p/original/uy2hMtS0kFLgyNISa81g6TKwlUw.jpg",
+                "https://image.tmdb.org/t/p/original/96IPjPaeQZoJ6uMDGNFdnwkQyRQ.jpg",
+                "https://image.tmdb.org/t/p/original/zdcTqRjOLbmgvNqqx2od7I4MjjO.jpg"
+        ],
+        dateAdded: "18/09/2025"
+    },
+    {
+        id: 67,
+        title: "Frances Ha",
+        year: "2012",
+        genre: ["Comédie", "Drame"],
+        rating: "2.5",
+        review: "",
+        poster: "https://image.tmdb.org/t/p/original/jrq1NoKvsxWCcffVOjegiYwloFN.jpg",
+        images: [
+                "https://image.tmdb.org/t/p/original/4Mn8dpJutVzjAgdBqvfv6ZLSihG.jpg",
+                "https://image.tmdb.org/t/p/original/2tEBNC9rzupMRZF2LG8OtGooGCh.jpg",
+                "https://image.tmdb.org/t/p/original/xVGfB2mNb3uicxBclmPaerejVM8.jpg"
+        ],
+        dateAdded: "17/09/2025"
+    },
+    {
+        id: 66,
+        title: "Psycho",
+        year: "1960",
+        genre: ["Mystère", "Thriller", "Horreur"],
+        rating: "4",
+        review: "",
+        poster: "https://image.tmdb.org/t/p/original/pQTCUa5MXtk5CHzVsElBHUjvB1v.jpg",
+        images: [
+                "https://image.tmdb.org/t/p/original/uif5fUshJrXyyDzfpzp1DLw3N0S.jpg",
+                "https://image.tmdb.org/t/p/original/xYLaPELHELoHdPwiDPMRShgoQDD.jpg",
+                "https://image.tmdb.org/t/p/original/3u5QxMv2qcFjr8v0bo5q4bt2lmQ.jpg"
+        ],
+        dateAdded: "17/09/2025"
+    },
+    {
         id: 65,
         title: "Bird",
         year: "2024",

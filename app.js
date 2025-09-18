@@ -51,8 +51,28 @@ function setupEventListeners() {
         if (e.target.classList.contains('page-link')) {
             currentPage = parseInt(e.target.dataset.page);
             renderMovies();
+            scrollToTop();
+        }
+        if (e.target.classList.contains('prev-btn')) {
+            if (currentPage > 1) {
+                currentPage--;
+                renderMovies();
+                scrollToTop();
+            }
+        }
+        if (e.target.classList.contains('next-btn')) {
+            const totalPages = Math.ceil(filteredMovies.length / moviesPerPage);
+            if (currentPage < totalPages) {
+                currentPage++;
+                renderMovies();
+                scrollToTop();
+            }
         }
     });
+}
+
+function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
 function generateFilters() {
@@ -322,11 +342,84 @@ function renderPagination(totalPages) {
         pagination.innerHTML = '';
         return;
     }
-    let buttons = '';
-    for (let i = 1; i <= totalPages; i++) {
-        buttons += `<button class="page-link ${i === currentPage ? 'active' : ''}" data-page="${i}">${i}</button>`;
+
+    let paginationHTML = '';
+    
+    // Bouton Précédent
+    paginationHTML += `
+        <button class="page-btn prev-btn ${currentPage === 1 ? 'disabled' : ''}" 
+                ${currentPage === 1 ? 'disabled' : ''}>
+            ← Précédent
+        </button>
+    `;
+
+    // Logique pour afficher les numéros de page
+    let startPage, endPage;
+    const maxPagesToShow = 5; // Nombre maximum de pages à afficher
+
+    if (totalPages <= maxPagesToShow) {
+        // Si on a moins de pages que le maximum, on les affiche toutes
+        startPage = 1;
+        endPage = totalPages;
+    } else {
+        // Sinon, on calcule la plage autour de la page courante
+        const halfPages = Math.floor(maxPagesToShow / 2);
+        
+        if (currentPage <= halfPages) {
+            startPage = 1;
+            endPage = maxPagesToShow;
+        } else if (currentPage + halfPages >= totalPages) {
+            startPage = totalPages - maxPagesToShow + 1;
+            endPage = totalPages;
+        } else {
+            startPage = currentPage - halfPages;
+            endPage = currentPage + halfPages;
+        }
     }
-    pagination.innerHTML = buttons;
+
+    // Première page + ellipses si nécessaire
+    if (startPage > 1) {
+        paginationHTML += `<button class="page-link" data-page="1">1</button>`;
+        if (startPage > 2) {
+            paginationHTML += `<span class="ellipsis">...</span>`;
+        }
+    }
+
+    // Pages dans la plage
+    for (let i = startPage; i <= endPage; i++) {
+        paginationHTML += `
+            <button class="page-link ${i === currentPage ? 'active' : ''}" data-page="${i}">
+                ${i}
+            </button>
+        `;
+    }
+
+    // Ellipses + dernière page si nécessaire
+    if (endPage < totalPages) {
+        if (endPage < totalPages - 1) {
+            paginationHTML += `<span class="ellipsis">...</span>`;
+        }
+        paginationHTML += `<button class="page-link" data-page="${totalPages}">${totalPages}</button>`;
+    }
+
+    // Bouton Suivant
+    paginationHTML += `
+        <button class="page-btn next-btn ${currentPage === totalPages ? 'disabled' : ''}"
+                ${currentPage === totalPages ? 'disabled' : ''}>
+            Suivant →
+        </button>
+    `;
+
+    // Informations sur la pagination
+    const startItem = (currentPage - 1) * moviesPerPage + 1;
+    const endItem = Math.min(currentPage * moviesPerPage, filteredMovies.length);
+    paginationHTML += `
+        <div class="pagination-info">
+            ${startItem}-${endItem} sur ${filteredMovies.length} films
+        </div>
+    `;
+
+    pagination.innerHTML = paginationHTML;
 }
 
 function toggleReview(id) {
